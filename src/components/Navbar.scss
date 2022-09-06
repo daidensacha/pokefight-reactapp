@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-
-:root {
-  --mainColor: #29335c;
-  --mainColorLight: #4b5994;
-  --bg-card: #fff8e1;
-  --textColor: #eee;
-  --primary: #014f76;
-  --danger: #ff0000;
-  --bg-navbar: #ef5350;
-}
+@import '../styles/variables.scss';
 
 header {
   display: flex;
@@ -19,7 +9,7 @@ header {
   background-color: var(--bg-navbar);
   color: var(--textColor);
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 10;
   nav {
     display: flex;

@@ -1,12 +1,10 @@
+@import '../styles/variables.scss';
 .card {
   cursor: pointer;
   perspective: 1000px;
   border-radius: 3px;
-  // padding: 1em;
   margin: 1em;
   min-width: 120px;
-  // border: 1px solid #ccc;
-  // background-color: var(--mainColor);
   .cardInner {
     width: 140px;
     height: 200px;
@@ -23,11 +21,9 @@
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       padding: 1em;
-      // border: 1px solid #ccc;
       width: 100%;
       height: 100%;
       .cardHeader {
-        // justify-content: center;
         text-align: center;
       }
       .cardBody {
@@ -47,7 +43,7 @@
     .cardBack {
       transform: rotateY(180deg);
       p {
-        font-size: .8em;
+        font-size: 0.8em;
         text-align: end;
       }
       .base {

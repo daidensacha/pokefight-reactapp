@@ -12,16 +12,15 @@ const Home = ({
   changePerPage,
   changeCurrentPage,
 }) => {
-  // if (loading) return <h1>Loading...</h1>;
   return (
     <div className='container'>
-      {/* <h1 className='text-center'>Home</h1> */}
       <BeatLoader
         className='beatloader'
         loading={loading}
         color='#de8e22'
         size={20}
       />
+
       <PokemonList
         pokemon={pokemon}
         changePerPage={changePerPage}

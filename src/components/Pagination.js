@@ -1,4 +1,5 @@
 import './Pagination.scss';
+
 const Pagination = ({
   gotoNextPage,
   gotoPrevPage,

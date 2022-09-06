@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 .pagination {
   margin: 1rem 0;
   display: flex;
@@ -23,7 +25,8 @@
       color: #666666;
     }
   }
-  .disabled, .disabled:hover {
+  .disabled,
+  .disabled:hover {
     cursor: default;
     border: 1px solid #999999;
     background-color: #cccccc;
