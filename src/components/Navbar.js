@@ -16,7 +16,7 @@ const Navbar = () => {
     <header>
       <h3>Pokefight</h3>
       <nav ref={navRef}>
-        <NavLink className='nav-link' to='/' onClick={showNavbar} exact>
+        <NavLink className='nav-link' to='/' onClick={showNavbar} >
           <FaHome className="nav-icon" />Home
         </NavLink>
         {/* <NavLink className='nav-link' to='/articles' onClick={showNavbar}>

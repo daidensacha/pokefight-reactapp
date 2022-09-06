@@ -1,0 +1,32 @@
+.pagination {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    border: none;
+    outline: none;
+    background: var(--bg-navbar);
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    transition: all 0.3s;
+    &:hover {
+      background-color: darken(#ef5350, 20%);
+      color: var(--bg-bavbar);
+    }
+    .disabled {
+      border: 1px solid #999999;
+      background-color: #cccccc;
+      color: #666666;
+    }
+  }
+  .disabled, .disabled:hover {
+    cursor: default;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+}

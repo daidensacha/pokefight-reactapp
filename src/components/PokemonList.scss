@@ -1,0 +1,27 @@
+#perPage, #currentPage {
+    width: 160px;
+    // min-width: 15ch;
+    // max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+select + select {
+  margin-left: 1rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pages {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  color: #000;;
+}

@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
-
 :root {
   --mainColor: #29335c;
   --mainColorLight: #4b5994;
+  --bg-card: #fff8e1;
   --textColor: #eee;
-  --primary: #00aaff;
+  --primary: #014f76;
   --danger: #ff0000;
+  --bg-navbar: #ef5350;
 }
 
 header {
   display: flex;
-  align-items: center;;
+  align-items: center;
   justify-content: space-between;
   height: 60px;
   padding: 0 2em;
-  background-color: var(--mainColor);
+  background-color: var(--bg-navbar);
   color: var(--textColor);
+  position: sticky;
+  top:0;
+  z-index: 10;
   nav {
     display: flex;
     align-items: center;
     font-size: 1.1em;
+  }
+  .nav-link {
+    margin: 0 0.5em;
+    padding: 0;
+    color: var(--textColor);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    .nav-icon {
+      margin-right: 1rem;
+      vertical-align: middle;
     }
-    .nav-link {
-      margin: 0 .5em;
-      padding: 0;
-      color: var(--textColor);
-      text-decoration: none;
-      transition: color 0.3s;
-      display: flex;
-      align-items: center;
-      .nav-icon {
-        margin-right: 1rem;
-        vertical-align: middle;
-      }
-      &:hover {
-        color: var(--primary);
+    &:hover {
+      color: var(--primary);
     }
     .nav-link + .nav-link {
       margin-left: 1em;
@@ -93,7 +97,5 @@ header {
     .responsive_nav {
       transform: none;
     }
-
-
   }
 }
