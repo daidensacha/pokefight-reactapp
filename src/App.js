@@ -55,6 +55,7 @@ function App() {
   const changePerPage = e => {
     // console.log(e.target.value)
     setPerPage(e.target.value);
+    setCurrentPage(1);
   };
 
   const changeCurrentPage = e => {

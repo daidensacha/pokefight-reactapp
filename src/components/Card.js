@@ -14,7 +14,7 @@ const Card = ({
   return (
     <div className='card' key={id}>
       <div className='cardInner'>
-        <div className='cardFront cardContent'>
+        <div className='cardContent cardFront'>
           <div className='cardHeader'>
             <h3>{english}</h3>
           </div>
@@ -24,7 +24,7 @@ const Card = ({
           </div>
         </div>
 
-        <div className='cardBack cardContent'>
+        <div className='cardContent cardBack'>
           <div className='cardHeader'>
             <h4>{type?.map(t => t + ' ')}</h4>
           </div>

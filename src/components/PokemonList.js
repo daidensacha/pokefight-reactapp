@@ -23,13 +23,15 @@ const PokemonList = ({
 
       {/* Pokemon per page select */}
       <select name='perPage' id='perPage' onChange={changePerPage}>
-        <option value='24' defaultValue>
-          24 per page
+        <option value='18' defaultValue>
+          18 per page
         </option>
-        <option value='48'>48 per page</option>
+        <option value='36'>36 per page</option>
+        <option value='54'>54 per page</option>
         <option value='72'>72 per page</option>
-        <option value='96'>96 per page</option>
-        <option value='120'>120 per page</option>
+        <option value='90'>90 per page</option>
+        <option value='108'>108 per page</option>
+        <option value='126'>126 per page</option>
       </select>
 
       {/* page number select */}

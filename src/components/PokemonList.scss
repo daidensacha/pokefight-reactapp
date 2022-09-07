@@ -1,5 +1,8 @@
 @import '../styles/variables.scss';
 
+.pokemonList {
+  min-height: calc(100vh - 148px);
+}
 #perPage,
 #currentPage {
   width: 160px;
