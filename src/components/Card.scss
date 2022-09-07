@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     transition: transform 0.8s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     border: 1px solid #ccc;
     color: #000;
@@ -59,3 +60,26 @@
     transform: rotateY(180deg);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin: .25em;
+    .cardInner {
+      min-width: 120px;
+      // height: 150px;
+      .cardContent {
+        padding: 0.5em;
+      }
+      .cardFront {
+        .cardBody {
+          .cardImage {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
