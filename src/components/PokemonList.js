@@ -20,7 +20,7 @@ const PokemonList = ({
   return (
     <div className='pokemonList'>
       <h1 className='text-center'>Pokemon List</h1>
-
+      <div className='row select'>
       {/* Pokemon per page select */}
       <select name='perPage' id='perPage' onChange={changePerPage}>
         <option value='18' defaultValue>
@@ -32,6 +32,7 @@ const PokemonList = ({
         <option value='90'>90 per page</option>
         <option value='108'>108 per page</option>
         <option value='126'>126 per page</option>
+        <option value='252'>252 per page</option>
       </select>
 
       {/* page number select */}
@@ -43,12 +44,13 @@ const PokemonList = ({
         {pages.map(pageNum => {
           return (
             <option key={pageNum} value={pageNum}>
-              Page {pageNum}
+              Page {pageNum} of {totalPages}
             </option>
           );
         })}
       </select>
-      <span className='pages'>of {totalPages} pages</span>
+      </div>
+      {/* <span className='pages'>of {totalPages} pages</span> */}
 
       <div className='cards'>
         {pokemon?.map(
