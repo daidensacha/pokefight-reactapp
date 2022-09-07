@@ -5,6 +5,7 @@
   border-radius: 3px;
   margin: 1em;
   min-width: 120px;
+  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   .cardInner {
     width: 140px;
     height: 200px;
@@ -17,6 +18,7 @@
     border: 1px solid #ccc;
     color: #000;
     background-color: var(--bg-card);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     .cardContent {
       position: absolute;
       backface-visibility: hidden;
@@ -28,36 +30,64 @@
         text-align: center;
       }
     }
-    .cardFront {
-      .cardBody {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .cardImage {
-          width: 100px;
-          height: 100px;
-          margin: 1em;
-        }
-      }
-    }
-    .cardBack {
-      transform: rotateY(180deg);
-      .cardBody {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        p {
-          font-size: 0.8em;
-          text-align: end;
-        }
-        .base {
-          color: var(--primary);
-        }
-      }
-    }
+    // .cardFront {
+    //   .cardBody {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     .cardImage {
+    //       width: 100px;
+    //       height: 100px;
+    //       margin: 1em;
+    //     }
+    //   }
+    // }
+    // .cardBack {
+    //   transform: rotateY(180deg);
+    //   .cardBody {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     p {
+    //       font-size: 0.8em;
+    //       text-align: end;
+    //     }
+    //     .base {
+    //       color: var(--primary);
+    //     }
+    //   }
+    // }
   }
   &:hover .cardInner {
     transform: rotateY(180deg);
+  }
+}
+
+.cardFront {
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cardImage {
+      width: 100px;
+      height: 100px;
+      margin: 1em;
+    }
+  }
+}
+.cardBack {
+  transform: rotateY(180deg);
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 0.8em;
+      text-align: end;
+    }
+    .base {
+      color: var(--primary);
+    }
   }
 }
 
