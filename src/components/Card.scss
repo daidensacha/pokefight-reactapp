@@ -58,9 +58,13 @@
     //   }
     // }
   }
-  &:hover .cardInner {
-    transform: rotateY(180deg);
-  }
+  // &:hover .cardInner {
+  //   transform: rotateY(180deg);
+  // }
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg);
 }
 
 .cardFront {
@@ -100,13 +104,32 @@
       .cardContent {
         padding: 0.5em;
       }
-      .cardFront {
-        .cardBody {
-          .cardImage {
-            width: 70px;
-            height: 70px;
-          }
-        }
+
+    }
+  }
+  .card:hover .cardInner {
+    transform: rotateY(180deg);
+  }
+  .cardFront {
+    .cardBody {
+      .cardImage {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  .cardBack {
+    transform: rotateY(180deg);
+    .cardBody {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        font-size: 0.8em;
+        text-align: end;
+      }
+      .base {
+        color: var(--primary);
       }
     }
   }
