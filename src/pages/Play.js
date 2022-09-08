@@ -14,7 +14,7 @@ const Play = () => {
   const pImages = process.env.REACT_APP_POKEMON_IMAGES_URL;
 
   const [playerPokemon, setPlayerPokemon] = useState(null);
-  const [pickedPokemon, setPickedPokemon] = useState(null);
+  // const [pickedPokemon, setPickedPokemon] = useState(null);
 
   // const url = `${pokefightApiUrl}${chosenPokemon}`;
   // console.log('url', url);
