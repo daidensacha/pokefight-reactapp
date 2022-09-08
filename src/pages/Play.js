@@ -46,7 +46,7 @@ const Play = () => {
   // change pokemon handler
   const changePokemonHandler = () => {
     setPlayerPokemonId(num());
-    setRandomPokemonId(num());
+    // setRandomPokemonId(num());
   };
 
 
