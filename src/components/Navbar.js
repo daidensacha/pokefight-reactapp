@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useRef } from 'react';
-import { FaBars, FaTimes, FaHome } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaGamepad } from 'react-icons/fa';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -19,6 +19,10 @@ const Navbar = () => {
         <NavLink className='nav-link' to='/' onClick={showNavbar}>
           <FaHome className='nav-icon' />
           Home
+        </NavLink>
+        <NavLink className='nav-link' to='/play'>
+          <FaGamepad className='nav-icon' />
+          Play
         </NavLink>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes />

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import Home from './pages/Home';
+import Play from './pages/Play';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
   const [pokemon, setPokemon] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [perPage, setPerPage] = useState(24);
+  const [perPage, setPerPage] = useState(18);
   const [currentPageUrl, setCurrentPageUrl] = useState(pokefightApiUrl);
   const [totalPages, setTotalPages] = useState();
   const [nextPage, setNextPage] = useState();
@@ -84,6 +85,7 @@ function App() {
               />
             }
           />
+          <Route path='/play/:id' element={<Play />} />
           <Route path='*' element={<Home />} />
         </Routes>
       </main>

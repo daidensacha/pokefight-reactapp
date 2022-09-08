@@ -1,3 +1,4 @@
+import { Link, useNavigate } from 'react-router-dom';
 import './Card.scss';
 const Card = ({
   id,
@@ -11,6 +12,9 @@ const Card = ({
   SpDefense,
   Speed,
 }) => {
+
+  const navigate = useNavigate();
+
   return (
     <div className='card' key={id}>
       <div className='cardInner'>
@@ -43,6 +47,7 @@ const Card = ({
               <span className='base'>Speed:</span> {Speed}
               <br />
             </p>
+            <button onClick={() => navigate(`/play/${id}`)}>Select</button>
           </div>
         </div>
       </div>
