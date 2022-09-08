@@ -1,1 +1,83 @@
 @import '../styles/variables.scss';
+
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+  width: 50%;
+}
+.col-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+  width: calc(100% / 12 * 5);
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+  width: calc(100% / 12 * 2);
+}
+.col-12 {
+  width: 100%;
+}
+.container.play {
+  min-height: 100vh;
+}
+.row.players {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+    .player {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1em 0;
+      padding: 1rem;
+      border: 1px solid var(--primary);
+      background-color: var(--bg-card);
+      color: var(--primary);
+      min-width: 50%;
+      aspect-ratio: 16/9;
+      .header {
+        text-align: center;
+      }
+      .body {
+        .base {
+          color: var(--primary);
+        }
+
+      }
+      p {
+        font-size: 1rem;
+        margin: .2em;
+      }
+
+    }
+    .guest p {
+      text-align: end;
+    }
+}
+.row.console {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    width: 100%;
+  }
+}

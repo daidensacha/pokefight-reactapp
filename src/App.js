@@ -85,6 +85,7 @@ function App() {
               />
             }
           />
+          <Route path='/play' element={<Play />} />
           <Route path='/play/:id' element={<Play />} />
           <Route path='*' element={<Home />} />
         </Routes>
