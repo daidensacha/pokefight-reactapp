@@ -7,6 +7,7 @@
   justify-content: center;
   margin: 1em 0;
   width: 50%;
+  align-self: stretch;
 }
 .col-5 {
   display: flex;
@@ -53,6 +54,9 @@
         text-align: center;
       }
       .body {
+        p {
+          text-align: end;
+        }
         .base {
           color: var(--primary);
         }

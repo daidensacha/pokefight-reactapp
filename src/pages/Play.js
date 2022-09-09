@@ -54,6 +54,19 @@ const Play = () => {
     setStartingPlayer(num() % 2 === 0 ? 'Guest starts' : 'Computer starts');
   }
 
+  // Attack functions
+  // const pAttack = (p1, p2) => {
+  //   const damage = Math.floor(0.5 * (p1.base.Attack / p2.base.Defense) * 1.25 * 1.5 * (p1.base.Speed / p2.base.Speed)) + 1
+  //   p1.base.Attack = p1.base.Attack + damage;
+  //   p2.base.Defense = p2.base.Defense - damage;
+  // }
+
+  // const sPattack = (p1, p2) => {
+  //  const sPdamage = Math.floor(0.5 * (p1.base["Sp. Attack"] / p2.base["Sp. Defense"]) * 1.25 * 1.5 * (p1.base.Speed / p2.base.Speed)) + 1
+  //   p1.base["Sp. Attack"] = p1.base["Sp. Attack"] + sPdamage;
+  //   p2.base["Sp. Defense"] = p2.base["Sp. Defense"] - sPdamage;
+  // }
+
   return (
     <div className='container play'>
       <h1>Play</h1>
@@ -107,6 +120,8 @@ const Play = () => {
             </div>
             <div className='footer'>
               <button onClick={changePokemonHandler}>Change</button>
+              {/* <button onClick={() => pAttack(playerPokemon,computerPokemon)}>Attack</button>
+              <button onClick={() => sPattack(playerPokemon,computerPokemon)}>spAttack</button> */}
             </div>
           </div>
         </div>
